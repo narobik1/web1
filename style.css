@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&display=swap');
+
+*{
+    font-family: 'Hubballi','Oswald', sans-serif;
+    scroll-behavior: smooth;
+    
+}
+html{
+    margin: 0;
+}
+
+nav{
+    font-size: 1.3em;
+    text-transform: uppercase;
+    position: fixed !important;
+    width: 100%;
+    font-weight: 300;
+    z-index: 9999999999;
+    background-color: rgba(0, 0, 0, 0.699);
+    color: white !important;
+}
+
+nav a, .nav-link{
+    color: white !important;
+}
+
+nav a:hover{
+    color: rgba(169, 177, 248, 0.87) !important;
+}
+
+.navbar-brand{
+    font-size: 1.3em !important;
+    font-weight: 300;
+}
+.navbar-toggler{
+    border: none !important;
+}
+
+button:focus {
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+
+
+/* -----------------------HERO-------------------------- */
+
+#hero{
+    height: 100vh;
+    background-image: url("./images/fokep.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top;
+    background-position-x: 50%;
+    background-position-y: 0%;
+}
+
+.szoveg{
+    position: relative;
+    padding: 2em;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.767);
+    
+}
+.szoveg p{
+    font-size: 1.8em;
+    text-transform: capitalize;
+    
+}
+#hero .szoveg p, #hero .szoveg h1,#hero .szoveg a button{
+    font-family: 'Oswald', sans-serif !important;
+}
+
+/* -----------------------Gallery-------------------------- */
+
+#gal{
+    background-image: url("./images/fokep.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+.galcap{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+}
+
+.galim{
+    height: 25rem;
+    overflow: hidden;
+    padding: 8em;
+    margin-top: 20em;
+}
+
+
+.galbox{
+    padding: 5rem;
+    margin-top: 16rem;
+    margin-bottom: 10rem;
+    /* background-color: rgba(202, 202, 202, 0.836); */
+    background-color: rgba(0, 0, 0, 0.699);
+    border-radius: 50px 50px;
+
+}
+
+/* -----------------------Footer-------------------------- */
+
+.lab{
+    background-color: #0b0c0e;
+    margin: 0;
+}
+
+.lab a{
+    color: white;
+    text-decoration: none;
+}
+
+.lab a:hover{
+    color: rgba(169, 177, 248, 0.87) !important;
+}
+
+.lab{
+    color: white;
+    text-decoration: none;
+}
+
+.lab p{
+    margin: 0;
+    margin: 1em;
+}
+
+.navigaciok a{
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    width: 100%;
+}
+
+.navigaciok ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.labcim{
+    font-size: 1.8em;
+    padding: 10px;
+}
+
+.iconspadd{
+    padding: 10px;
+}
+
+
+/*---------------------------------------------------------------------*/
+#about{
+    color: white;
+    margin: 7rem 0rem;
+}
+#about h1{
+    font-size: 5em;
+}
+
+#about p{
+    font-size: 1.5em;
+    font-family: 'Hubballi', sans-serif;
+
+}
+
+
+@media screen and (max-width: 700px) {
+    #hero{
+        background-attachment:scroll;
+    }
+    #contactcont{
+        color: white;
+        font-size: 2rem;
+        margin: 4em 0;
+    }
+    #about h1{
+        font-size: 3em;
+    }
+    .galim{
+        padding: 4em;
+    }
+
+    .sectionszoveg h1{
+        font-size: 2.5em;
+    }
+    .sectionszoveg h2{
+        font-size: 1.5em;
+    }
+    .navbar-brand{
+        font-size: 0.6em !important;
+        font-weight: 300;
+    }
+    
+  }
+
