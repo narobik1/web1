@@ -11,7 +11,10 @@
         <img src="./images/redpanda.jpg" alt="" class="img-fluid" width="200px">
         <a href="./?page=details" class="mt-3">
             <button type="button" class="btn btn-outline-light">Details</button>
-        </a>    
+        </a> 
+        <a href="http://www.allatkertialapitvany.hu/" class="mt-3">
+            <button type="button" class="btn btn-outline-light">Original page</button>
+        </a> 
 
     </div>
 
