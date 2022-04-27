@@ -7,18 +7,18 @@ if (isset($_POST['kuld'])) {
     $fajlok = $_FILES["fajlok"];
     for ($i = 0; $i < count($fajlok["name"]); $i++) {
         if ($fajlok['error'][$i] == 4)
-            $uzenet[] = "Válasszon ki fájlt!";
+            $uzenet[] = "Choose a file!";
         elseif ($fajlok['error'][$i] == 1 or $fajlok['error'][$i] == 2 or $fajlok['size'][$i] > $maxsize)
-            $uzenet[] = " Túl nagy a feltöltendő fájl mérete: " . $fajlok['name'][$i];
+            $uzenet[] = " The file's size is too big: " . $fajlok['name'][$i];
         elseif (!in_array($fajlok['type'][0], $types))
-            $uzenet[] = " Nem megfelelő típus: " . $fajlok['name'][$i];
+            $uzenet[] = " Not supported file format: " . $fajlok['name'][$i];
         else {
             $hova = $dir . strtolower($fajlok['name'][$i]);
             if (file_exists($hova))
-                $uzenet[] = " Már létezik: " . $fajlok['name'][$i];
+                $uzenet[] = " This file already exists: " . $fajlok['name'][$i];
             else {
                 move_uploaded_file($fajlok['tmp_name'][$i], $hova);
-                $uzenet[] = 'A fájl sikeresen feltöltve :)' . $fajlok['name'][$i];
+                $uzenet[] = 'The files is uploaded :)' . $fajlok['name'][$i];
             }
         }
     }
@@ -77,7 +77,7 @@ closedir($olvaso);
         <?php
         if (!empty($uzenet)) {
             foreach ($uzenet as $u)
-                echo "<h4>$u</h4><br>";
+                echo "<h4 style='color:white;'>$u</h4><br>";
         } ?>
     </div>
 
